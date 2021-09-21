@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hemocare/presentation/widgets/gradient_pattern_button.dart';
 import 'package:hemocare/presentation/widgets/header_image.dart';
 
 class IntroScreen extends StatelessWidget {
@@ -8,15 +9,21 @@ class IntroScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: const [
+        children: [
           //image
-          HeaderImage(),
+          const HeaderImage(),
           //welcome text
-          Text(
+          const Text(
             "Bem vindo ao Hemocare",
             style: TextStyle(fontSize: 24, color: Colors.black),
-          )
+          ),
           //create account
+          GradientPatternButton(
+            title: "Criar Conta",
+            onPressed: () {
+              //todo push to signUp
+            },
+          ),
 
           // already has login
         ],
