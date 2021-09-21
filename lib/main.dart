@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hemocare/presentation/journeys/intro_slider/intro_slider.dart';
+import 'package:hemocare/presentation/themes/colors.dart';
+
+import 'presentation/journeys/intro/intro_screen.dart';
 
 void main() {
-  runApp(CustomIntroSlider());
+  runApp(MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -16,6 +18,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
+        primaryColor: AppColors.darkPurple,
         fontFamily: GoogleFonts.notoSans().fontFamily,
         textTheme: const TextTheme(
           headline1: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold),
@@ -23,6 +26,7 @@ class _MyAppState extends State<MyApp> {
           bodyText2: TextStyle(fontSize: 14.0),
         ),
       ),
+      home: IntroScreen(),
     );
   }
 }
