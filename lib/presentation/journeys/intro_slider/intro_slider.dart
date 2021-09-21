@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hemocare/presentation/themes/colors.dart';
 import 'package:intro_slider/intro_slider.dart';
 import 'package:intro_slider/slide_object.dart';
 
@@ -27,6 +28,7 @@ class _CustomIntroSliderState extends State<CustomIntroSlider> {
       ),
       description:
           'Hemocare é um app que permite o paciente realizar o controle de infusões',
+      backgroundColor: AppColors.blue,
     ));
   }
 
