@@ -28,13 +28,24 @@ class _CustomIntroSliderState extends State<CustomIntroSlider> {
       ),
       description:
           'Hemocare é um app que permite o paciente realizar o controle de infusões',
-      backgroundColor: AppColors.blue,
+      styleDescription: GoogleFonts.notoSans(
+        fontSize: 18,
+        color: Colors.black,
+      ),
+      backgroundColor: Colors.white,
     ));
   }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+          primaryColor: AppColors.darkPurple,
+          fontFamily: GoogleFonts.notoSans().fontFamily,
+          textTheme: const TextTheme(
+              headline1: TextStyle(fontSize: 72, fontWeight: FontWeight.bold),
+              headline6: TextStyle(fontSize: 36),
+              bodyText2: TextStyle(fontSize: 14))),
       home: IntroSlider(
         slides: slides,
         showDotIndicator: true,
