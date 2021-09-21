@@ -25,7 +25,7 @@ class DefaultButton extends StatelessWidget {
           title,
           textAlign: TextAlign.center,
           textScaleFactor: 1,
-          style: TextStyle(fontSize: 20, color: AppColors.lightPurple),
+          style: const TextStyle(fontSize: 20, color: AppColors.lightPurple),
         ),
       ),
     );

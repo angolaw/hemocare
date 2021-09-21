@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hemocare/presentation/widgets/default_button.dart';
 import 'package:hemocare/presentation/widgets/gradient_pattern_button.dart';
 import 'package:hemocare/presentation/widgets/header_image.dart';
 
@@ -9,6 +10,7 @@ class IntroScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           //image
           const HeaderImage(),
@@ -26,6 +28,12 @@ class IntroScreen extends StatelessWidget {
           ),
 
           // already has login
+          DefaultButton(
+            title: "Já tenho conta",
+            onPressed: () {
+              //todo push to sign in
+            },
+          )
         ],
       ),
     );
